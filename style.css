@@ -1,9 +1,506 @@
-body{
-    background-color: rgb(137, 177, 164);
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background-color: #eaf5ee;
+    color: #29483b;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 24px;
+    background-image: url("./img/fundoooooo.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 29px;
+    color: #245b42;
+    margin-top: 0;
+}
+
+h3 {
+    color: #26734d;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #26734d;
+}
+
+
+/* ABERTURA COM TRÊS QUADRINHOS VERDES */
+
+.painel-clima {
+    max-width: 1150px;
+    margin: 25px auto 40px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.titulo-principal {
+    color: #23734d;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 19px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 30px;
+}
+
+.grade-dados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.dado-clima {
+    background-color: #13261a;
+    border: 2px solid #b9e769;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.dado-numero {
+    font-size: 23px;
+    font-weight: bold;
+    color: #b9e769;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.dado-texto {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+/* BLOCOS DE TEXTO */
+
+.bloco-texto {
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.bloco-texto h2 {
+    margin-bottom: 20px;
+}
+
+.bloco-texto p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.frase-destaque {
+    color: #26734d;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* PILARES DA ODS 3 */
+
+.grade-pilares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.pilar {
+    padding: 18px;
+    background-color: #eaf5ee;
+    border-radius: 12px;
+}
+
+.pilar h3 {
+    margin: 0;
+    font-size: 19px;
+}
+
+
+/* IMPACTOS DA TECNOLOGIA */
+
+.secao-impactos {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 35px 25px;
+    background-color: #eaf5ee;
+    border-radius: 20px;
+}
+
+.secao-impactos h2 {
+    font-size: 30px;
+    color: #245b42;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+
+/* GRADE DOS CARTÕES */
+
+.grade-cartoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* APARÊNCIA DOS CARTÕES */
+
+.cartao {
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+.cartao h3 {
+    font-size: 22px;
+    color: #26734d;
+    margin: 0 0 18px;
+}
+
+.cartao img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.cartao p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #34483c;
+    margin: 0 0 14px;
+}
+
+.cartao strong {
+    color: #26734d;
+}
+
+
+/* METAS DA ODS 3 */
+
+.meta {
+    background-color: #eaf5ee;
+    padding: 24px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.meta h3 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.meta p {
+    margin-bottom: 0;
+}
+
+
+/* NOSSA SOLUÇÃO */
+
+.secao-solucao {
+    max-width: 1150px;
+    margin: 60px auto;
+}
+
+.solucao-principal {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 22px;
+}
+
+.solucao-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.solucao-texto h2 {
+    color: #245b42;
+    font-size: 29px;
+}
+
+.solucao-texto h3 {
+    font-size: 20px;
+}
+
+.solucao-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.solucao-imagem {
+    width: 35%;
+}
+
+.solucao-imagem img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+/* DESAFIO DE SETE DIAS */
+
+.desafio-digital {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    background-color: #d8efdc;
+    padding: 35px;
+    margin-top: 30px;
+    border-radius: 22px;
+}
+
+.desafio-icone {
+    background-color: #26734d;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.desafio-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.desafio-texto h2 {
+    color: #245b42;
+    font-size: 27px;
+}
+
+.desafio-texto p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* CONCLUSÃO */
+
+.solucao-conclusao {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 22px;
+}
+
+.solucao-conclusao h2 {
+    color: #245b42;
+    font-size: 29px;
+}
+
+.solucao-conclusao p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: 18px auto;
+}
+
+.imagem-conclusao {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 15px;
+}
+
+
+/* FONTES E REFERÊNCIAS */
+
+.referencias {
+    margin-bottom: 50px;
+}
+
+.referencias a {
+    color: #26734d;
+    text-decoration: underline;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .grade-dados {
+        grid-template-columns: 1fr;
+    }
+
+    .solucao-principal {
+        flex-direction: column;
+    }
+
+    .solucao-imagem {
+        width: 100%;
+    }
+
+    .solucao-imagem img {
+        height: 300px;
+    }
+
+    .desafio-digital {
+        flex-direction: column;
+    }
 
 }
-#ods3img{
-    float: right;
+
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 14px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .painel-clima {
+        padding: 22px;
+    }
+
+    .titulo-principal {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 17px;
+    }
+
+    .dado-numero {
+        font-size: 21px;
+    }
+
+    .bloco-texto {
+        padding: 22px;
+    }
+
+    .grade-pilares {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-impactos {
+        padding: 20px 12px;
+    }
+
+    .secao-impactos h2 {
+        font-size: 25px;
+    }
+
+    .grade-cartoes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cartao {
+        padding: 18px;
+    }
+
+    .cartao h3 {
+        font-size: 21px;
+    }
+
+    .cartao img {
+        height: 210px;
+    }
+
+    .cartao p {
+        font-size: 16px;
+    }
+
+    .solucao-principal {
+        padding: 22px;
+    }
+
+    .solucao-texto h2 {
+        font-size: 25px;
+    }
+
+    .solucao-imagem img {
+        height: 250px;
+    }
+
+    .desafio-digital {
+        padding: 22px;
+    }
+
+    .desafio-icone {
+        font-size: 22px;
+    }
+
+    .desafio-texto h2 {
+        font-size: 24px;
+    }
+
+    .solucao-conclusao {
+        padding: 22px;
+    }
+
+    .solucao-conclusao h2 {
+        font-size: 25px;
+    }
 
 }
+.imagem-h1 {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+}
+
+
+
+
 

@@ -14,7 +14,7 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 24px;
-    background-image: url("./img/fundoooooo.avif");
+    background-image: url("./img/FUNDO\ IDEAL.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -500,7 +500,33 @@ a {
     width: 400px;
 }
 
+/* RODAPÉ DO SITE */
 
+.rodape {
+    background-color: #45bb8e;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.rodape h3 {
+    color: #fafffd;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.rodape p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.direitos {
+    font-size: 13px;
+    color: #c9e8df;
+    margin-top: 25px;
+}
 
 
 

@@ -528,5 +528,272 @@ a {
     margin-top: 25px;
 }
 
+/* METAS DA ODS 3 */
 
+.area-metas {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.area-metas h2 {
+    color: #245b42;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.introducao-metas {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* CARTÕES DAS METAS */
+
+.grade-metas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cartao-meta {
+    background-color: #eaf5ee;
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid #c9dfd0;
+}
+
+.cartao-meta h3 {
+    color: #245b42;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.cartao-meta p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* DESTAQUE DA META 3.4 */
+
+.meta-principal {
+    background-color: #d8efdc;
+    border: 2px solid #26734d;
+}
+
+.meta-principal h3 {
+    color: #17613f;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem-metas {
+    background-color: #145c59;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 18px;
+}
+
+.mensagem-metas h3 {
+    color: #b9f3dc;
+    font-size: 25px;
+}
+
+.mensagem-metas p {
+    color: white;
+    font-size: 17px;
+}
+
+/* METAS NO CELULAR */
+
+@media (max-width: 700px) {
+
+    .area-metas {
+        padding: 20px;
+    }
+
+    .grade-metas {
+        grid-template-columns: 1fr;
+    }
+
+    .area-metas h2 {
+        font-size: 25px;
+    }
+}
+/* BOTÃO DO DESAFIO */
+
+.botao-desafio {
+    display: inline-block;
+    background-color: #145c59;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao-desafio:hover {
+    background-color: #26734d;
+}
+
+/* MOVIMENTO SUAVE DA PÁGINA */
+
+html {
+    scroll-behavior: smooth;
+}
+/* BOTÃO ABAIXO DO DESAFIO */
+
+.area-botao-desafio {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.botao-desafio {
+    display: inline-block;
+    background-color:   #2e613f;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-desafio:hover {
+    background-color: #26734d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ATIVIDADES DO DESAFIO */
+
+.atividades-desafio {
+    background-color: white;
+    padding: 35px;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+.atividades-desafio h2 {
+    text-align: center;
+    color: #245b42;
+}
+
+.grade-atividades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.atividade {
+    background-color: #d8efdc;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.atividade h3 {
+    color: #17613f;
+    margin-top: 0;
+}
+
+.atividade p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+    .grade-atividades {
+        grid-template-columns: 1fr;
+    }
+
+    .atividades-desafio {
+        padding: 22px;
+    }
+}
+/* COR VERDE DOS CARTÕES */
+
+.bloco-texto.cartao-verde {
+    background-color: #d8efdc;
+    border: 1px solid #b7d9c0;
+}
+/* CARTÃO OBJETIVO DO PROJETO */
+
+.mensagem-metas {
+    background-color: #d8efdc;
+    color: #174d32;
+    border: 1px solid #b7d9c0;
+    border-radius: 18px;
+}
+
+.mensagem-metas h3 {
+    color: #174d32;
+}
+
+.mensagem-metas p {
+    color: #174d32;
+}
+
+/* FRASE FINAL DAS METAS */
+
+.frase-final-metas {
+    text-align: center;
+    color: #174d32;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 30px 15px 10px;
+}
+
+/* ESPAÇAMENTO DA FRASE FINAL */
+
+.frase-final-metas {
+    text-align: center;
+    color: #174d32;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.8;
+
+    max-width: 750px;
+    margin: 55px auto 35px;
+    padding: 0 20px;
+}
+/* ESPAÇO ABAIXO DO CARTÃO VERDE */
+
+
+
+.mensagem-metas {
+    margin-bottom: 70px;
+}
+/* IMAGEM DO OBJETIVO DO PROJETO */
+
+.imagem-equilibrio {
+    display: block;
+    width: 75%;
+    max-width: 650px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 30px auto 35px;
+}
+
+@media (max-width: 700px) {
+    .imagem-equilibrio {
+        width: 100%;
+        height: auto;
+    }
+}
 

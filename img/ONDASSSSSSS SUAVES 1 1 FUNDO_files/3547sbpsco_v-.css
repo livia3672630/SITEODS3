@@ -1,0 +1,6 @@
+.dsw1x80{grid-template-rows:auto 1fr;grid-template-columns:auto 1fr;display:grid}
+.dsw1x82{grid-template-areas:"topbar topbar""filters result"}
+.dsw1x83{grid-template-areas:"topbar result""filters result"}
+.dsw1x84{grid-area:topbar;justify-content:space-between}
+.dsw1x85{grid-area:filters}
+.dsw1x86{grid-area:result}

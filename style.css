@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 24px;
     background-color: #eaf5ee;
-    color: #29483b;
+    color: #245b42;;
     font-family: Arial, sans-serif;
     line-height: 1.7;
     margin: 0;
@@ -840,3 +840,185 @@ html {
 }
 
 
+/* ANIMAÇÃO DOS CARTÕES */
+
+@keyframes tremidinha {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-4px) rotate(-1deg); }
+    50% { transform: translateY(-6px) rotate(1deg); }
+    75% { transform: translateY(-4px) rotate(-1deg); }
+    100% { transform: translateY(0); }
+}
+
+.cartao-meta:hover,
+.cartao:hover,
+.atividade-dia:hover {
+    animation: tremidinha 0.4s ease;
+    cursor: pointer;
+}
+
+/* ANIMAÇÃO DOS DIAS DO DESAFIO */
+
+.atividades-desafio .atividade {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.atividades-desafio .atividade:hover {
+    animation: tremidinha 0.4s ease;
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes tremidinha {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(1deg); }
+    100% { transform: rotate(0deg) scale(1.04); }
+}
+
+/* ANIMAÇÃO DO BOTÃO */
+
+.botao-desafio {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-desafio:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* CARTÕES DOS IMPACTOS */
+.secao-impactos .cartao {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secao-impactos .cartao:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ZOOM NAS IMAGENS */
+.secao-impactos .cartao img {
+    transition: transform 0.3s ease;
+}
+
+.secao-impactos .cartao:hover img {
+    transform: scale(1.03);
+}
+
+/* CARTÕES DAS METAS */
+.cartao-meta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-meta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* DESTAQUE ESPECIAL DA META 3.4 */
+.meta-principal:hover {
+    box-shadow: 0 0 22px rgba(38, 115, 77, 0.45);
+}
+
+/* ANIMAÇÃO PARA TODOS OS CARTÕES */
+
+.cartao,
+.cartao-meta,
+.pilar,
+.dado-clima,
+.atividade,
+.bloco-texto,
+.mensagem-metas {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover,
+.cartao-meta:hover,
+.pilar:hover,
+.dado-clima:hover,
+.atividade:hover,
+.bloco-texto:hover,
+.mensagem-metas:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ANIMAÇÃO DA PARTE NOSSA SOLUÇÃO */
+
+.solucao-principal,
+.desafio-digital,
+.solucao-conclusao,
+.atividades-desafio {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solucao-principal:hover,
+.desafio-digital:hover,
+.solucao-conclusao:hover,
+.atividades-desafio:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* MELHORIAS DO INÍCIO */
+
+/* TÍTULO PRINCIPAL */
+.painel-clima h1,
+.painel-clima h2 {
+    font-size: 36px;
+    color: #245b42;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* IMAGEM PRINCIPAL */
+.painel-clima img {
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.painel-clima img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* TRÊS CARTÕES VERDES */
+.dado-clima {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dado-clima:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ESPAÇAMENTO DO INÍCIO */
+.painel-clima {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+
+/* CLAREAR OS TRÊS QUADRINHOS DO INÍCIO */
+
+.dado-clima {
+    background-color: #d8efdc;
+    color: #245b42;
+}
+
+.dado-clima h3,
+.dado-clima p {
+    color: #245b42;
+}
+
+/* BORDAS VERDE-ESCURAS DOS QUADRINHOS */
+
+.dado-clima {
+    border: 2px solid #245b42;
+    border-radius: 15px;
+}

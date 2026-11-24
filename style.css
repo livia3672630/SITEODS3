@@ -797,3 +797,46 @@ html {
     }
 }
 
+
+.menu-site {
+    max-width: 1150px;
+    margin: 20px auto 30px;
+    padding: 20px;
+    background-color: #205b46;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.nome-site {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.links-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.links-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.links-menu a:hover {
+    background-color: #d8efdc;
+    color: #205b46;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+

@@ -21,6 +21,31 @@ body {
     background-attachment: fixed;
 }
 
+/* ANIMAÇÃO DA LINHA DECORATIVA */
+
+.linha-identidade {
+    animation: crescerLinha 1.5s ease-out both;
+}
+
+@keyframes crescerLinha {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* RESPEITAR PREFERÊNCIAS DE MOVIMENTO */
+
+@media (prefers-reduced-motion: reduce) {
+    .identidade-visual h1,
+    .linha-identidade {
+        animation: none;
+    }
+}
+
 h1, h2, h3 {
     line-height: 1.3;
 }
@@ -60,21 +85,25 @@ a {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
-.titulo-principal {
-    color: #23734d;
-    font-size: 38px;
+ .titulo-principal {
+    color: #245b42;
+    font-size: 42px;
+    font-weight: 800;
     text-align: center;
+    line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .subtitulo {
-    font-size: 19px;
+    color: #52685b;
+    font-size: 21px;
+    font-weight: 400;
     text-align: center;
+    line-height: 1.5;
     max-width: 850px;
     margin: 0 auto 30px;
 }
-
 .grade-dados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1022,3 +1051,947 @@ html {
     border: 2px solid #245b42;
     border-radius: 15px;
 }
+
+
+/* MELHORIAS NAS IMAGENS DO SITE */
+
+.bloco-texto img,
+.secao-impactos img,
+.secao-solucao img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* TÍTULOS MAIS BONITOS DO SITE */
+
+.bloco-texto h2,
+.secao-impactos h2,
+.area-metas h2,
+.secao-solucao h2,
+.atividades-desafio h2 {
+    color: #245b42;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* LINHA VERDE ABAIXO DOS TÍTULOS */
+
+.bloco-texto h2::after,
+.secao-impactos h2::after,
+.area-metas h2::after,
+.secao-solucao h2::after,
+.atividades-desafio h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background-color: #245b42;
+    border-radius: 10px;
+    margin: 12px auto 0;
+    transition: width 0.3s ease;
+}
+
+/* ANIMAÇÃO DA LINHA AO PASSAR O MOUSE */
+
+.bloco-texto:hover h2::after,
+.secao-impactos:hover h2::after,
+.area-metas:hover h2::after,
+.secao-solucao:hover h2::after,
+.atividades-desafio:hover h2::after {
+    width: 110px;
+}
+
+/* SOMBRAS ELEGANTES DOS CARTÕES */
+
+.cartao,
+.cartao-meta,
+.pilar,
+.dado-clima,
+.atividade,
+.bloco-texto,
+.mensagem-metas {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* SOMBRA AO PASSAR O MOUSE */
+
+.cartao:hover,
+.cartao-meta:hover,
+.pilar:hover,
+.dado-clima:hover,
+.atividade:hover,
+.bloco-texto:hover,
+.mensagem-metas:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(36, 91, 66, 0.22);
+}
+
+/* IDENTIDADE VISUAL ACIMA DO MENU */
+
+.identidade-visual {
+    background: linear-gradient(135deg, #e3f1e6, #c9e8d2);
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 3px solid #245b42;
+}
+
+.identidade-visual h1 {
+    color: #245b42;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.identidade-visual p {
+    color: #245b42;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.identidade-visual span {
+    color: #245b42;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .identidade-visual h1 {
+        font-size: 28px;
+    }
+}
+
+/* NOVA IDENTIDADE VISUAL */
+
+.identidade-visual {
+    background: linear-gradient(135deg, #245b42, #347653);
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 5px solid #b7e1c4;
+}
+
+/* TEXTO SUPERIOR */
+
+.identidade-visual span {
+    display: block;
+    color: #d8efdc;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* NOME DO PROJETO */
+
+.identidade-visual h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0 0 15px;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* LINHA DECORATIVA */
+
+.linha-identidade {
+    width: 90px;
+    height: 4px;
+    background-color: #b7e1c4;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+/* FRASE DO PROJETO */
+
+.identidade-visual p {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 600px) {
+    .identidade-visual h1 {
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+
+    .identidade-visual p {
+        font-size: 17px;
+    }
+
+    .identidade-visual span {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
+/* UNIFORMIZAR A COR DA IDENTIDADE VISUAL E DO MENU */
+
+.identidade-visual,
+.menu-site {
+    background: #245b42;
+    background-color: #245b42;
+}
+
+/* DEIXAR A DIVISÃO MAIS DISCRETA */
+
+.identidade-visual {
+    border-bottom: none;
+}
+/* MELHORAR O TÍTULO PRINCIPAL DA ODS 3 */
+
+.painel-clima .titulo-principal {
+    font-size: 42px;
+    font-weight: 800;
+    color: #245b42;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+/* DIMINUIR A FRASE ABAIXO DO TÍTULO */
+
+.painel-clima h2 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #52685b;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* AJUSTAR PARA CELULAR */
+
+@media (max-width: 600px) {
+    .painel-clima .titulo-principal {
+        font-size: 30px;
+    }
+
+    .painel-clima h2 {
+        font-size: 17px;
+    }
+}
+
+/* TÍTULO PRINCIPAL DA ODS 3 */
+
+#alerta h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #245b42;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+/* FRASE ABAIXO DO TÍTULO */
+
+#alerta h2 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #52685b;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 600px) {
+    #alerta h1 {
+        font-size: 30px;
+    }
+
+    #alerta h2 {
+        font-size: 17px;
+    }
+}
+
+/* TÍTULO E SUBTÍTULO DA ODS 3 */
+
+#alerta .titulo-principal {
+    font-size: 44px;
+    font-weight: 800;
+    color: #245b42;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+#alerta .subtitulo {
+    font-size: 20px;
+    font-weight: 400;
+    color: #52685b;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO VOLTAR AO TOPO */
+
+.voltar-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #245b42;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.voltar-topo:hover {
+    background-color: #347653;
+    transform: translateY(-5px);
+}
+
+/* CHECKLIST DO DESAFIO DE 7 DIAS */
+
+.marcar-desafio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #d8efdc;
+    border: 2px solid #245b42;
+    border-radius: 12px;
+    color: #245b42;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CAIXINHA DE MARCAR */
+
+.marcar-desafio input {
+    width: 20px;
+    height: 20px;
+    accent-color: #245b42;
+    cursor: pointer;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.marcar-desafio:hover {
+    background-color: #c5e7ce;
+}
+
+/* DESTAQUE QUANDO MARCADO */
+
+.marcar-desafio:has(input:checked) {
+    background-color: #b7e1c4;
+    border-color: #245b42;
+}
+
+/* CAIXA VOCÊ SABIA */
+
+.voce-sabia {
+    background-color: #e3f1e6;
+    border: 2px solid #245b42;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 35px auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* TÍTULO */
+
+.voce-sabia h2 {
+    color: #245b42;
+    font-size: 28px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* TEXTO */
+
+.voce-sabia p {
+    color: #245b42;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* DICA */
+
+.dica-sabia {
+    background-color: #d0e8d6;
+    color: #245b42;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* ANIMAÇÃO */
+
+.voce-sabia:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(36, 91, 66, 0.20);
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 600px) {
+    .voce-sabia {
+        padding: 20px;
+        margin: 25px 15px;
+    }
+
+    .voce-sabia h2 {
+        font-size: 24px;
+    }
+
+    .voce-sabia p {
+        font-size: 16px;
+    }
+}
+
+/* PERGUNTAS FREQUENTES */
+
+.perguntas-frequentes {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+/* TÍTULO */
+
+.perguntas-frequentes h2 {
+    color: #245b42;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* INTRODUÇÃO */
+
+.introducao-faq {
+    text-align: center;
+    color: #52685b;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* CAIXAS DAS PERGUNTAS */
+
+.perguntas-frequentes details {
+    background-color: #e3f1e6;
+    border: 2px solid #245b42;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+/* PERGUNTAS CLICÁVEIS */
+
+.perguntas-frequentes summary {
+    color: #245b42;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px;
+    cursor: pointer;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.perguntas-frequentes summary:hover {
+    background-color: #d0e8d6;
+}
+
+/* RESPOSTAS */
+
+.perguntas-frequentes details p {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 18px;
+    margin: 0;
+}
+
+/* PERGUNTA ABERTA */
+
+.perguntas-frequentes details[open] {
+    box-shadow: 0 6px 18px rgba(36, 91, 66, 0.15);
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .perguntas-frequentes {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+
+    .perguntas-frequentes h2 {
+        font-size: 25px;
+    }
+
+    .perguntas-frequentes summary {
+        font-size: 16px;
+    }
+}
+
+/* ANIMAÇÃO DO TÍTULO ALÉM DAS TELAS */
+
+.identidade-visual h1 {
+    animation: aparecerTitulo 1.5s ease-out both;
+}
+
+/* MOVIMENTO SUAVE DE ENTRADA */
+
+@keyframes aparecerTitulo {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SEÇÃO SOBRE O PROJETO */
+
+.sobre-projeto {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 35px 25px;
+    background-color: #e3f1e6;
+    border: 2px solid #245b42;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+/* TÍTULO */
+
+.sobre-projeto h2 {
+    color: #245b42;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* TEXTO DE APRESENTAÇÃO */
+
+.texto-sobre {
+    color: #245b42;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ORGANIZAÇÃO DOS CARTÕES */
+
+.grade-sobre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARTÕES */
+
+.cartao-sobre {
+    background-color: white;
+    border: 2px solid #245b42;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-sobre h3 {
+    color: #245b42;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.cartao-sobre p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ANIMAÇÃO DOS CARTÕES */
+
+.cartao-sobre:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(36, 91, 66, 0.20);
+}
+
+/* FRASE FINAL */
+
+.frase-sobre {
+    color: #245b42;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 700px) {
+    .sobre-projeto {
+        margin: 25px 15px;
+        padding: 25px 18px;
+    }
+
+    .grade-sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-projeto h2 {
+        font-size: 27px;
+    }
+
+    .texto-sobre {
+        font-size: 16px;
+    }
+}
+
+
+/* METAS COMPACTAS QUE ABREM E FECHAM */
+
+.area-metas {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+/* DUAS COLUNAS COM MAIS ESPAÇO */
+
+.grade-metas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+/* CARTÕES DAS METAS */
+
+.grade-metas details.cartao-meta {
+    display: block;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    background-color: #ffffff;
+    border: 2px solid #245b42;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+/* TÍTULO CLICÁVEL */
+
+.grade-metas .cartao-meta summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px 20px;
+    color: #245b42;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+/* ESCONDER SETA PADRÃO */
+
+.grade-metas .cartao-meta summary::-webkit-details-marker {
+    display: none;
+}
+
+/* SÍMBOLO DE ABRIR */
+
+.grade-metas .cartao-meta summary::after {
+    content: "+";
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+/* SÍMBOLO DE FECHAR */
+
+.grade-metas .cartao-meta[open] summary::after {
+    content: "−";
+}
+
+/* TEXTO QUE APARECE AO ABRIR */
+
+.grade-metas .cartao-meta p {
+    padding: 0 20px 20px;
+    margin: 0;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.grade-metas details.cartao-meta:hover {
+    box-shadow: 0 8px 22px rgba(36, 91, 66, 0.18);
+}
+
+/* DESTAQUE PARA A META 3.4 */
+
+.grade-metas details.meta-principal {
+    background-color: #d8efdc;
+    border: 3px solid #245b42;
+}
+
+/* AJUSTE PARA CELULAR */
+
+@media (max-width: 700px) {
+    .area-metas {
+        margin: 35px 15px;
+        padding: 25px 15px;
+    }
+
+    .grade-metas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* DEIXAR A SEÇÃO DAS METAS MAIS COMPACTA */
+
+.grade-metas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+}
+
+/* CARTÕES MENORES */
+
+.cartao-meta {
+    padding: 12px;
+    min-height: 75px;
+    box-sizing: border-box;
+}
+
+/* MENOS ESPAÇO NA SEÇÃO */
+
+.area-metas {
+    padding: 25px 30px;
+}
+
+/* ADAPTAR PARA CELULAR */
+
+@media (max-width: 900px) {
+    .grade-metas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grade-metas {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* CORRIGIR O TAMANHO DOS CARTÕES DAS METAS */
+
+.area-metas .grade-metas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* CARTÕES DAS METAS */
+
+.area-metas .cartao-meta {
+    width: auto;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 22px;
+    overflow-wrap: break-word;
+}
+
+/* AJUSTE PARA CELULARES */
+
+@media (max-width: 700px) {
+    .area-metas .grade-metas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ORGANIZAÇÃO DAS 13 METAS */
+
+.area-metas {
+    width: 100%;
+    max-width: 1150px;
+    box-sizing: border-box;
+}
+
+.area-metas .grade-metas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.area-metas .cartao-meta {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 22px;
+    overflow-wrap: normal;
+}
+
+@media (max-width: 700px) {
+    .area-metas .grade-metas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ROLAGEM SUAVE DO SITE */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+/* ESPAÇO ENTRE AS SEÇÕES */
+
+.area-metas,
+.secao-impactos,
+.secao-solucao,
+.atividades-desafio {
+    scroll-margin-top: 25px;
+}
+
+/* BOTÃO DE CONCLUSÃO */
+
+.atividade-final {
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    background-color: #d8efdc;
+    border: 2px solid #245b42;
+}
+
+.check-final {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.botao-final {
+    display: inline-block;
+    background-color: #245b42;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.botao-final:hover {
+    background-color: #347653;
+}
+
+/* CONFETES INVISÍVEIS ANTES DO CLIQUE */
+
+.confetes {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 9999;
+}
+
+.confetes span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    font-size: 35px;
+}
+
+/* EXPLOSÃO DOS CONFETES */
+
+.check-final:checked ~ .confetes span {
+    animation: explosao-confetes 1.8s ease-out forwards;
+}
+
+.confetes span:nth-child(1)  { --x: -420px; --y: -300px; }
+.confetes span:nth-child(2)  { --x: -300px; --y: -220px; }
+.confetes span:nth-child(3)  { --x: -150px; --y: -350px; }
+.confetes span:nth-child(4)  { --x: 100px;  --y: -330px; }
+.confetes span:nth-child(5)  { --x: 280px;  --y: -250px; }
+.confetes span:nth-child(6)  { --x: 420px;  --y: -150px; }
+.confetes span:nth-child(7)  { --x: -400px; --y: 150px; }
+.confetes span:nth-child(8)  { --x: -250px; --y: 300px; }
+.confetes span:nth-child(9)  { --x: -80px;  --y: 350px; }
+.confetes span:nth-child(10) { --x: 150px;  --y: 320px; }
+.confetes span:nth-child(11) { --x: 300px;  --y: 200px; }
+.confetes span:nth-child(12) { --x: 430px;  --y: 100px; }
+
+@keyframes explosao-confetes {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.3) rotate(0deg);
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y))
+                   scale(1.5) rotate(720deg);
+    }
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem-final {
+    display: none;
+    color: #245b42;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.check-final:checked ~ .mensagem-final {
+    display: block;
+}
+
+
